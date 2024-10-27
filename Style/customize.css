@@ -1,0 +1,40 @@
+@media screen and (min-width:992px){
+    header
+    {
+        -webkit-backdrop-filter: blur(39px);
+        backdrop-filter: blur(39px);
+    }
+    .navbar-nav{
+        translate: 60% 0;
+    }
+    .contact-section {
+        translate: 0 -100%;
+    }
+    .hero-holder .text
+    {
+        max-width: 50%;
+    }
+    .main-body .about-inner{width: 70%;}
+}
+@media screen and (max-width:768px)
+{
+    .row{flex-direction: column;}
+    .contact-3{transform: translateY(30%);}
+    .main-body .about-inner{padding: .7rem !important;}
+    .main-body .about-inner{right: 0vw;}
+    .TileCard{width: 100vw !important;}
+}
+@media screen and (max-width:425px){
+    header{margin-bottom: 3rem !important;}
+    .cover-holder img
+    {
+        position: absolute;
+        top:0;
+        right:0;
+        height: 90%;
+        width:100%;
+        z-index: -1;
+        opacity: .4;
+    }
+    .hero-holder .text{width: 100vw;translate: 0 -30% !important;}
+}
